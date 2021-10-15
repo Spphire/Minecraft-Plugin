@@ -1,0 +1,16 @@
+name: Apricity
+version: '${project.version}'
+main: apricity.genshin.Apricity
+api-version: 1.17
+description: 1.17.1
+
+commands:
+  Artifacts:
+    aliases: [Arti]
+    description: 主命令
+    usage: |
+      §c/<command> create [玩家名] [操作]  >> 增加或全部清除玩家手持物品的属性
+              §b[操作]可以是 ATK 或 CRIT_Rate 或 CRIT_Damage 或 clear
+      §c/<command> rewrite [玩家名] [属性] [属性值]>> 重写玩家手持物品的Lore()
+              §b[属性]可以是 ATK 或 CRIT_Rate 或 CRIT_Damage
+      §c/<command> rewrite [玩家名] clear>> 清除玩家手持物品的Lore()
